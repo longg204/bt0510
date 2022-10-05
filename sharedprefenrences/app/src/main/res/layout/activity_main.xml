@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Đăng nhập hệ thống"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="#145F9A"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/edusername"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="100dp"
+            android:hint="User name"/>
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <CheckBox
+            android:id="@+id/cbremember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhớ mật khẩu"
+            android:layout_marginTop="15dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btndangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đăng nhập"/>
+    </LinearLayout>
+</RelativeLayout>
